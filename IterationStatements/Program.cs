@@ -56,10 +56,10 @@ namespace IterationStatements
             Console.WriteLine("Increase:");
 
             // Create a foreach loop
-            foreach (var number in numbers) { 
+            foreach (var num in numbers) { 
             // Write your variable to the console
 
-            Console.WriteLine("${newNumbers}");
+            Console.WriteLine($"{num}");
             }
             Console.WriteLine("Decrease:");
 
@@ -68,10 +68,11 @@ namespace IterationStatements
             // in your conditional, as long as i is less than or equal to the length of "numbers"
             // and as long as i is greater than or equal to 0
             // Decrement i by 1
-            for(var i= 199; i <= numbers.Count && i<= 0; i--)
+
+            for(var i= 199; i<= numbers.Count && i>= 0; i--)
             {
                 // Write to the console "numbers" at index i
-                Console.WriteLine("${numbers[i]}");
+                Console.WriteLine(numbers[i]);
             }
         }
     }
